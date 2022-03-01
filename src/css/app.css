@@ -1,0 +1,50 @@
+.device-cordova.device-ios {
+  height: 100vh;
+}
+.selettore{
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.dolci{
+  margin-left: 10px;
+}
+.apebox{
+  margin-left: -1px;
+}
+.torte{
+  margin-left: 6px;
+}
+.biscotti{
+  margin-left: 2px;
+}
+.imgcar{
+  position: absolute;
+  right: 335px;
+
+}
+.testo{
+  margin-top: 25px;
+}
+.cestino{
+  position: absolute;
+  left:310px;
+  margin-top: 4px;
+}
+.qty{
+
+}
+.butconf{
+  background-color: #e84c4f;
+}
+.piu{
+  background-color: #e84c4f;
+}
+.meno{
+  background-color: grey;
+}
+.num{
+  color:white;
+}
+.pagine{
+  color:white;
+}

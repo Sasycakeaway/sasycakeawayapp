@@ -1,0 +1,106 @@
+<Page name="prenotazioni">
+    <!-- Top Navbar -->
+    <Navbar sliding={false} backLink="Back">
+      <NavTitle sliding>Sasycakeaway</NavTitle>
+      <NavTitleLarge>Sasycakeaway</NavTitleLarge>
+    </Navbar>
+    <List inlineLabels>
+          <ListItem>
+            <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Nome</div>
+              <div class="item-input-wrap">
+                <input type="text" placeholder="Il tuo nome" id="nome"/>
+                <span class="input-clear-button"></span>
+              </div>
+            </div>
+          </li>
+        </ListItem>
+        <ListItem>
+          <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Cognome</div>
+            <div class="item-input-wrap">
+              <input type="text" placeholder="Il tuo cognome" id="cognome"/>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ListItem>
+      <ListItem>
+        <li class="item-content item-input">
+        <div class="item-inner">
+          <div class="item-title item-label">Email</div>
+          <div class="item-input-wrap">
+            <input type="text" placeholder="La tua email" id="email"/>
+            <span class="input-clear-button"></span>
+          </div>
+        </div>
+      </li>
+    </ListItem>
+    <ListItem>
+      <li class="item-content item-input">
+      <div class="item-inner">
+        <div class="item-title item-label">Indirizzo</div>
+        <div class="item-input-wrap">
+          <input type="text" placeholder="L'indirizzo di consegna" id="indirizzo"/>
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+  </ListItem>
+  <ListItem>
+    <li class="item-content item-input">
+    <div class="item-inner">
+      <div class="item-title item-label">Telefono</div>
+      <div class="item-input-wrap">
+        <input type="text" placeholder="Il tuo numero di telefono" id="telefono"/>
+        <span class="input-clear-button"></span>
+      </div>
+    </div>
+  </li>
+</ListItem>
+<ListItem>
+  <label class="item-checkbox item-content">
+    <input type="checkbox" id="domicilio"/>
+    <i class="icon icon-checkbox" ></i>
+    <div class="item-inner">
+      <div class="item-title">Consegna a domicilio</div>
+    </div>
+  </label>
+  </ListItem>
+    </List>
+    <Button on:click={manda} href="/conferma/">Ordina</Button>
+  </Page>
+  <script >
+  
+   
+    import {
+      Page,
+      Navbar,
+      NavLeft,
+      NavTitle,
+      NavTitleLarge,
+      NavRight,
+      Link,
+      Toolbar,
+      Block,
+      BlockTitle,
+      List,
+      ListItem,
+      Row,
+      Col,
+      Button,
+      Card,
+      ListInput
+    } from 'framework7-svelte';
+    function manda(){
+      emailjs.send("service_ccwtjlr","template_hatbq92",{
+      nome: (document.getElementById("nome").value) + " " + (document.getElementById("cognome").value),
+      indirizzo: document.getElementById("indirizzo").value,
+      phone: document.getElementById("telefono").value,
+      prodotti: (JSON.stringify(carrello)) + (JSON.stringify(trasformista)),
+      domicilio: document.getElementById("domicilio").checked,
+      });
+    }
+  </script>

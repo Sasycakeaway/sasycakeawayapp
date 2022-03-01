@@ -1,0 +1,26 @@
+{
+  "cwd": "/Users/andrepc/Desktop/sasycakeawaycap",
+  "type": [
+    "capacitor"
+  ],
+  "name": "Sasy's cake away",
+  "framework": "svelte",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#e84c4f",
+    "darkTheme": true,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "pkg": "io.andrea055.sasycakeaway",
+  "capacitor": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
