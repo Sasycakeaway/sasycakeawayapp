@@ -17,19 +17,31 @@
       for(var prodotti of Object.keys(carrello))
     {
       if(piru.id==prodotti){
-        delete carrello[prodotti]
+        carrello[prodotti]--
+        if(carrello[prodotti]==0){
+          delete carrello[prodotti]
         var li=document.getElementById("cart")
         li.removeChild(document.getElementById(prodotti+"car"))
+        }else{
+          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
+        }
+        
       }else{
       }
     }
     for(var prodotti of Object.keys(trasformista))
     {
-      console.log(prodotti)
+      
       if(piru.id==prodotti){
-        delete carrello[prodotti]
+        carrello[prodotti]--
+        if(carrello[prodotti]==0){
+          delete carrello[prodotti]
         var li=document.getElementById("cart")
         li.removeChild(document.getElementById(prodotti))
+        }else{
+          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
+        }
+        
       }else{
       }
     }
@@ -47,9 +59,9 @@
   
   
   <!-- built styles file will be auto injected -->
-  <script type="module" crossorigin src="assets/index.6c20877c.js"></script>
+  <script type="module" crossorigin src="assets/index.9dda9cf4.js"></script>
   <link rel="modulepreload" href="assets/vendor.f96a0567.js">
-  <link rel="stylesheet" href="assets/index.4fa4be34.css">
+  <link rel="stylesheet" href="assets/index.a1be6fb3.css">
 </head>
 <body>
   <div id="app"></div>

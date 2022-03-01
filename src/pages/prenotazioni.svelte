@@ -70,6 +70,17 @@
       </div>
     </li>
   </ListItem>
+    <ListItem>
+      <li class="item-content item-input">
+      <div class="item-inner">
+        <div class="item-title item-label">Note</div>
+        <div class="item-input-wrap">
+          <input type="text" placeholder="Note dell'ordine" id="note" style="margin-right: -25px;"/>
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+  </ListItem>
   <ListItem>
     <label class="item-checkbox item-content">
       <input type="checkbox" id="domicilio"/>
@@ -104,13 +115,14 @@
       ListInput
     } from 'framework7-svelte';
     function manda(){
-      emailjs.send("service_ccwtjlr","template_mouij5x",{
+      emailjs.send("service_ccwtjlr","template_q7p6jls",{
       nome: (document.getElementById("nome").value) + " " + (document.getElementById("cognome").value),
       indirizzo: document.getElementById("indirizzo").value,
       phone: document.getElementById("telefono").value,
       prodotti: (JSON.stringify(carrello)) + (JSON.stringify(trasformista)),
       domicilio: document.getElementById("domicilio").checked,
       data: document.getElementById("consegna").value,
+      note: document.getElementById("note").value,
       });
     }
   </script>

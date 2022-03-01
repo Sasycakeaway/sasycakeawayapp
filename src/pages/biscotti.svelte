@@ -4,10 +4,13 @@
     <NavTitle sliding>Biscotti</NavTitle>
     <NavTitleLarge>Biscotti</NavTitleLarge>
   </Navbar>
+  <Block>
+    <p>Ogni sacchetto pesa 250G, ad esempio se vengono ordinati 2 sacchetti ne verra fatto solo uno da 500G e così via, per richieste specifiche scrivere nelle note dell'ordine</p>
+  </Block>
     <List mediaList>
       <ListItem
         title="Paste di meliga"
-        after="$15"
+        after="20€ al KG"
         
       >
         <img slot="media" src="meliga.jpg" width="80" />
@@ -24,7 +27,7 @@
 
       <ListItem
         title="Baci di dama"
-        after="$22"
+        after="20€ al KG"
         
       >
         <img slot="media" src="dama.jpg" width="80" />
@@ -39,7 +42,7 @@
 
       <ListItem
         title="Brut ma bon"
-        after="$16"
+        after="20€ al KG"
         
       >
         <img slot="media" src="brutmabon.jpg" width="80" />
@@ -54,7 +57,7 @@
 
       <ListItem
       title="Meringhe"
-      after="$16"
+      after="20€ al KG"
       
     >
       <img slot="media" src="meringhe.jpg" width="80" />
@@ -69,7 +72,7 @@
 
     <ListItem
     title="Nocciolotti"
-    after="$16"
+    after="20€ al KG"
    
   >
     <img slot="media" src="nocciolotti.jpg" width="80" />
@@ -84,7 +87,7 @@
 
     <ListItem
     title="Cantucci"
-    after="$16"
+    after="20€ al KG"
     
     >
     <img slot="media" src="cantucci.jpg" width="80" />
@@ -98,7 +101,7 @@
     </ListItem>
     <ListItem
     title="Canestrelli"
-    after="$16"
+    after="20€ al KG"
     
     >
     <img slot="media" src="canestrelli.jpg" width="80" />
@@ -112,7 +115,7 @@
     </ListItem>
     <ListItem
     title="Biscotti di frolla"
-    after="$16"
+    after="20€ al KG"
     
     >
     <img slot="media" src="frolla.jpg" width="80" />
@@ -126,7 +129,7 @@
     </ListItem>
     <ListItem
     title="Assabesi"
-    after="$16"
+    after="20€ al KG"
    
     >
     <img slot="media" src="assabesi.jpg" width="80" />
@@ -140,7 +143,7 @@
     </ListItem>
     <ListItem
     title="Krumiri"
-    after="$16"
+    after="20€ al KG"
     
     >
     <img slot="media" src="krumiri.png" width="80" />
@@ -154,7 +157,7 @@
     </ListItem>
     <ListItem
     title="Diamantini"
-    after="$16"
+    after="20€ al KG"
     
     >
     <img slot="media" src="diamantini.JPG" width="80" />

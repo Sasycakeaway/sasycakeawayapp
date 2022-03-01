@@ -1,4 +1,4 @@
-<App { ...f7params } themeDark>
+<App { ...f7params }>
 
  <!-- Views/Tabs container -->
  <Views tabs class="safe-areas">

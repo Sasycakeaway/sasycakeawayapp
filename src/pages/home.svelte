@@ -13,7 +13,7 @@
       <Link href="/biscotti/">   
       <Card class="biscotti">
         <span slot="header"><img src="./biscuits1.png" width="50px"/></span>
-        <span slot="content"><div align="center" style="color:white">Biscotti</div></span>
+        <span slot="content"><div align="center" >Biscotti</div></span>
     </Card>
   </Link>
   </Col>
@@ -21,7 +21,7 @@
       <Link href="/apebox/">    
       <Card class="apebox">
         <span slot="header"><img src="./box1.png" width="50px"/></span>
-        <span slot="content"><div align="center" style="color:white">Apebox</div></span>
+        <span slot="content"><div align="center">Apebox</div></span>
     </Card>
   </Link>
   </Col>
