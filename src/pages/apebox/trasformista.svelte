@@ -218,19 +218,19 @@ function checkino(){
 
   if(contatore>6){
       alert("Hai superato 6 ingredienti, riprova selezionando solo 6 ingredienti")
-    }
-  for(var i=0;i<prodotti.length;i++){
+    }else{
+      for(var i=0;i<prodotti.length;i++){
 
-    if(contatore<6&&document.getElementById(prodotti[i]).checked==true){
-      ingredienti.push(prodotti[i])
-      
-    }
+if(contatore<6&&document.getElementById(prodotti[i]).checked==true){
+  ingredienti.push(prodotti[i])
+  
+}
 
 
 }
-  for(var i=0;i<ingredienti.length;i++){
-  }
-  for(var i=0;i<prodotti.length;i++){
+for(var i=0;i<ingredienti.length;i++){
+}
+for(var i=0;i<prodotti.length;i++){
 
 document.getElementById(prodotti[i]).checked=false
 }
@@ -238,5 +238,8 @@ if(prodotti!=[]){
 trasformista[k]=ingredienti
 k++
 }
+totale=totale+18
+    }
+
 }
 </script>
