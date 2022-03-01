@@ -60,7 +60,7 @@
       after="20€ al KG"
       
     >
-      <img slot="media" src="meringhe.jpg" width="80" />
+      <img slot="media" src="Meringhe.jpg" width="80" />
               <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -75,7 +75,7 @@
     after="20€ al KG"
    
   >
-    <img slot="media" src="nocciolotti.jpg" width="80" />
+    <img slot="media" src="Nocciolotti.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -90,7 +90,7 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="cantucci.jpg" width="80" />
+    <img slot="media" src="Cantucci.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -104,7 +104,7 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="canestrelli.jpg" width="80" />
+    <img slot="media" src="Canestrelli.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -132,7 +132,7 @@
     after="20€ al KG"
    
     >
-    <img slot="media" src="assabesi.jpg" width="80" />
+    <img slot="media" src="Assabesi.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -146,7 +146,7 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="krumiri.jpg" width="80" />
+    <img slot="media" src="Krumiri.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -160,7 +160,7 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="diamantini.JPG" width="80" />
+    <img slot="media" src="Diamantini.JPG" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap num">
