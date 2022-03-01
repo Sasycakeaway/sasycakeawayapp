@@ -34,7 +34,8 @@
   margin-top: 4px;
 }
 .qty{
-
+  position: absolute;
+  margin-left: 180px;
 }
 .butconf{
   background-color: #e84c4f;

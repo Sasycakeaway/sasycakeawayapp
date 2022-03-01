@@ -71,30 +71,43 @@
     });
   })
   function prova(){
+
     document.getElementById('cart').innerHTML="";
+
     if(Object.keys(carrello).length==0&&Object.keys(trasformista).length==0){
+
       var node = document.createElement('li');
 node.appendChild(document.createTextNode('Il carrello è vuoto'));
 
 document.getElementById('cart').appendChild(node);
+
 }else{
+
 for(var i=0;i<Object.keys(carrello).length;i++){
   var nome=Object.getOwnPropertyNames(carrello)[i]
   var img = document.createElement('img');
   img.src = Object.getOwnPropertyNames(carrello)[i] + '.jpg';
   img.width="40"
   img.className="imgcar"
+
 var node = document.createElement('li');
 node.id=Object.getOwnPropertyNames(carrello)[i]+"car"
 node.appendChild(document.createTextNode(Object.getOwnPropertyNames(carrello)[i]));
 node.appendChild(img);
+
 var img = document.createElement('img');
   img.src = 'delete.png';
   img.width="70"
   img.className="cestino"
   img.id=Object.getOwnPropertyNames(carrello)[i]
   img.setAttribute("onclick", "pop(this)")
+
   node.appendChild(img);
+var qty=document.createElement("p")
+var pino=document.createTextNode("Quantità " + Object.values(carrello)[i]);
+qty.setAttribute("class", "qty")
+qty.appendChild(pino);
+node.append(qty)
 document.getElementById('cart').appendChild(node);
 
 }
