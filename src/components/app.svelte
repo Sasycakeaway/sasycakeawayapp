@@ -71,7 +71,7 @@
     });
   })
   function prova(){
-
+    document.getElementById("tot").innerText="Totale=" + totale + "€"
     document.getElementById('cart').innerHTML="";
 
     if(Object.keys(carrello).length==0&&Object.keys(trasformista).length==0){

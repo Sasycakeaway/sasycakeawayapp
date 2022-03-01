@@ -13,13 +13,14 @@
           </ul>
         </div>
       </div>
+      <p id="tot">Totale={totale}€</p>
       </Block>
       <Block>
         <Button fill href="/prenotazioni/">Conferma l'ordine</Button>
     </Block>
   </Page>
   <script>
-
+    
     import {
       Page,
       Navbar,

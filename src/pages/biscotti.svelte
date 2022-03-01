@@ -200,6 +200,7 @@ function check(){
 for(var i=0;i<prodotti.length;i++){
   if(document.getElementById(prodotti[i]).value!=0){ 
 carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
+totale=totale+(5*document.getElementById(prodotti[i]).value)
   }else{}
 }
 

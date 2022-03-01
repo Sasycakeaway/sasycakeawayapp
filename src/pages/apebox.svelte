@@ -106,6 +106,19 @@
 for(var i=0;i<prodotti.length;i++){
 if(document.getElementById(prodotti[i]).value!=0){
   carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
+  switch (prodotti[i]) {
+    case "nord":
+      totale=totale+(12*document.getElementById(prodotti[i]).value)
+      break;
+    case "sud":
+      totale=totale+(15*document.getElementById(prodotti[i]).value)
+    case "grandeabbuffata":
+      totale=totale+(15*document.getElementById(prodotti[i]).value)
+    case "vegetariano":
+      totale=totale+(15*document.getElementById(prodotti[i]).value)
+    default:
+      break;
+  }
 }
 }
       }
