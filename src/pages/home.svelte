@@ -1,36 +1,31 @@
-<Page name="home">
+<Page name="home" >
 
   <Navbar sliding={false} backLink="Back">
-    <NavTitle sliding>Sasy's cake away</NavTitle>
+    <NavTitle sliding={false}>Sasy's cake away</NavTitle>
     <NavTitleLarge>Sasy's cake away</NavTitleLarge>
   </Navbar>
-  <!-- Page content -->
   <Block strong>
     <p>Ciao, benvenuto nell'app di Sasy's cake away</p>
   </Block>
   <div align="center">
-  
   <Row>
     <Col >   
       <Link href="/biscotti/">   
       <Card class="biscotti">
         <span slot="header"><img src="./biscuits1.png" width="50px"/></span>
-        <span slot="content"><div align="center">Biscotti</div></span>
+        <span slot="content"><div align="center" style="color:white">Biscotti</div></span>
     </Card>
   </Link>
-
   </Col>
     <Col >  
       <Link href="/apebox/">    
       <Card class="apebox">
         <span slot="header"><img src="./box1.png" width="50px"/></span>
-        <span slot="content"><div align="center">Apebox</div></span>
+        <span slot="content"><div align="center" style="color:white">Apebox</div></span>
     </Card>
   </Link>
-
   </Col>
   </Row>
-
 </div>
 </Page>
 <script >

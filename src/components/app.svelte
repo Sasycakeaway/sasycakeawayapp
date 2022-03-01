@@ -4,13 +4,15 @@
  <Views tabs class="safe-areas">
   <!-- Tabbar for switching views-tabs -->
   <Toolbar tabbar labels bottom class="pagine">
-    <Link tabLink="#view-home" tabLinkActive iconIos="f7:house_fill" iconAurora="f7:house_fill" iconMd="material:home" text="Home" />
-    <Link tabLink="#view-carrello" tabLinkActive iconIos="f7:cart" iconAurora="f7:cart" iconMd="f7:cart" text="Carrello" on:click={prova}/>
+    <Link tabLink="#view-home" tabLinkActive iconIos="f7:house" iconAurora="f7:house" iconMd="f7:house" text="Home" />
+    <Link tabLink="#view-carrello"  iconIos="f7:cart" iconAurora="f7:cart" iconMd="f7:cart" text="Carrello" on:click={prova}/>
+    <Link tabLink="#view-contatti" iconIos="f7:map" iconAurora="f7:map" iconMd="f7:map" text="Contatti"/>
   </Toolbar>
 
   <!-- Your main view/tab, should have "view-main" class. It also has "tabActive" prop -->
   <View id="view-home" main tab tabActive url="/" />
   <View id="view-carrello" tab url="/carrello/" />
+  <View id="view-contatti" tab url="/contatti/" />
 
 
 </Views>

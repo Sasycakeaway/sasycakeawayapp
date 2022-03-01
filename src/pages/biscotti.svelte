@@ -8,7 +8,7 @@
       <ListItem
         title="Paste di meliga"
         after="$15"
-        subtitle="Le paste di meliga di sasy's"
+        
       >
         <img slot="media" src="meliga.jpg" width="80" />
         
@@ -25,7 +25,7 @@
       <ListItem
         title="Baci di dama"
         after="$22"
-        subtitle="Baci di dama"
+        
       >
         <img slot="media" src="dama.jpg" width="80" />
                 <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -40,7 +40,7 @@
       <ListItem
         title="Brut ma bon"
         after="$16"
-        subtitle="brutmabon"
+        
       >
         <img slot="media" src="brutmabon.jpg" width="80" />
                 <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -55,7 +55,7 @@
       <ListItem
       title="Meringhe"
       after="$16"
-      subtitle="meringhe"
+      
     >
       <img slot="media" src="meringhe.jpg" width="80" />
               <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -70,7 +70,7 @@
     <ListItem
     title="Nocciolotti"
     after="$16"
-    subtitle="boh"
+   
   >
     <img slot="media" src="nocciolotti.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -85,7 +85,7 @@
     <ListItem
     title="Cantucci"
     after="$16"
-    subtitle="boh"
+    
     >
     <img slot="media" src="cantucci.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -99,7 +99,7 @@
     <ListItem
     title="Canestrelli"
     after="$16"
-    subtitle="boh"
+    
     >
     <img slot="media" src="canestrelli.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -113,7 +113,7 @@
     <ListItem
     title="Biscotti di frolla"
     after="$16"
-    subtitle="boh"
+    
     >
     <img slot="media" src="frolla.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -127,7 +127,7 @@
     <ListItem
     title="Assabesi"
     after="$16"
-    subtitle="boh"
+   
     >
     <img slot="media" src="assabesi.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -141,7 +141,7 @@
     <ListItem
     title="Krumiri"
     after="$16"
-    subtitle="boh"
+    
     >
     <img slot="media" src="krumiri.png" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -155,7 +155,7 @@
     <ListItem
     title="Diamantini"
     after="$16"
-    subtitle="boh"
+    
     >
     <img slot="media" src="diamantini.JPG" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">

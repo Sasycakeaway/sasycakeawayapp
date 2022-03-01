@@ -10,6 +10,7 @@ import AbbuffataPage from '../pages/apebox/abbuffata.svelte';
 import VegetarianoPage from '../pages/apebox/vegetariano.svelte';
 import PrenotazioniPage from '../pages/prenotazioni.svelte';
 import ConfermaPage from '../pages/conferma.svelte'
+import ContattiPage from '../pages/contatti.svelte'
 var routes = [
   {
     path: '/',
@@ -54,6 +55,10 @@ var routes = [
   {
     path: '/conferma/', 
     component: ConfermaPage,
+  },
+  {
+    path: '/contatti',
+    component: ContattiPage,
   },
   {
     path: '/request-and-load/user/:userId/',
