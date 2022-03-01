@@ -6,7 +6,7 @@
       </Navbar>
       <Block>
       <div align="center">
-      <img src="veg.jpg" width="70%"  />
+      <img src="Il vegetariano.jpg" width="70%"  />
       <List simpleList>
         <ListItem title="- Selezione di formaggi misti"></ListItem>
         <ListItem title="- Flan di zucchine con salsa di toma"></ListItem>

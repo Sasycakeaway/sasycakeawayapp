@@ -13,12 +13,12 @@
         after="20€ al KG"
         
       >
-        <img slot="media" src="meliga.jpg" width="80" />
+        <img slot="media" src="Paste di meliga.jpg" width="80" />
         
         <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="meliga" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Paste di meliga" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -30,11 +30,11 @@
         after="20€ al KG"
         
       >
-        <img slot="media" src="dama.jpg" width="80" />
+        <img slot="media" src="Baci di dama.jpg" width="80" />
                 <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="dama" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Baci di dama" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -45,11 +45,11 @@
         after="20€ al KG"
         
       >
-        <img slot="media" src="brutmabon.jpg" width="80" />
+        <img slot="media" src="brut ma bon.jpg" width="80" />
                 <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="brutmabon" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Brut ma bon" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -64,7 +64,7 @@
               <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="meringhe" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Meringhe" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -79,7 +79,7 @@
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="nocciolotti" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Nocciolotti" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -94,7 +94,7 @@
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="cantucci" class="num" />
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Cantucci" class="num" />
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -108,7 +108,7 @@
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="canestrelli" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Canestrelli" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -118,11 +118,11 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="frolla.jpg" width="80" />
+    <img slot="media" src="Frollini.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="frolla" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Frollini" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -136,7 +136,7 @@
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="assabesi" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Assabesi" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -150,7 +150,7 @@
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="krumiri" class="num" />
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Krumiri" class="num" />
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -164,19 +164,19 @@
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap num">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="diamantini" class="num" />
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Diamantini" class="num" />
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
     </ListItem>
     </List>
-    <Button fill on:click={check} class="butconf">Conferma la prenotazione</Button>
+    <Button fill on:click={check} class="butconf" >Aggiungi al carrello</Button>
 
 </Page>
 <script>
 //import {carrello} from './carrello.js'
 
-var prodotti=["meliga","dama","brutmabon","meringhe","nocciolotti","cantucci","canestrelli","frolla","assabesi","krumiri","diamantini"]
+var prodotti=["Paste di meliga","Baci di dama","Brut ma bon","Meringhe","Nocciolotti","Cantucci","Canestrelli","Frollini","Assabesi","Krumiri","Diamantini"]
     import {
       Page,
       Navbar,

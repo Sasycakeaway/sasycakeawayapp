@@ -11,12 +11,12 @@
           after="12€"
           text="Formaggi e affettati del Nord, pane con lardo, focaccia genovese con patè di olive, piada al crudo di parma e tocchetti di frico su pane nero"
         >
-          <img slot="media" src="nord.jpg" width="80" />
+          <img slot="media" src="Benvenuti al Nord.jpg" width="80" />
           
           <div class="stepper stepper-raised stepper-fill stepper-init selettore">
             <div class="stepper-button-minus meno"></div>
             <div class="stepper-input-wrap">
-              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="nord" />
+              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Benvenuti al Nord" />
             </div>
             <div class="stepper-button-plus piu"></div>
           </div>
@@ -28,11 +28,11 @@
           after="15€"
          text="Formaggi e affettati dal Sud, cassatine salate, babà con pecorino,zeppole salate, biscotti salati e tette delle monache salate"
         >
-          <img slot="media" src="sud.jpg" width="80" />
+          <img slot="media" src="Benvenuti al sud.jpg" width="80" />
                   <div class="stepper stepper-raised stepper-fill stepper-init selettore">
             <div class="stepper-button-minus meno"></div>
             <div class="stepper-input-wrap">
-              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="sud" />
+              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Benvenuti al Sud" />
             </div>
             <div class="stepper-button-plus piu"></div>
           </div>
@@ -43,11 +43,11 @@
           after="15€"
           text="Affettati e formaggi misti, flan di zucchine con salsa di toma, biscottini salati, tartellette alla crema di piselli e bacon, insalata di riso alla cantonese e Quiche Lorrein"
         >
-          <img slot="media" src="grandeabbuffata.jpg" width="80" />
+          <img slot="media" src="La grande abbuffata.jpg" width="80" />
                   <div class="stepper stepper-raised stepper-fill stepper-init selettore">
             <div class="stepper-button-minus meno"></div>
             <div class="stepper-input-wrap">
-              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="grandeabbuffata" />
+              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="La grande abbuffata" />
             </div>
             <div class="stepper-button-plus piu"></div>
           </div>
@@ -58,11 +58,11 @@
         after="12€"
         text="Formaggi misti, flan di zucchine con salsa di toma, babà con pecorino, tartelline alla crema di parmigiano, verdura di stagione e brutti e buoni salati"
       >
-        <img slot="media" src="veg.jpg" width="80" />
+        <img slot="media" src="Il vegetariano.jpg" width="80" />
                 <div class="stepper stepper-raised stepper-fill stepper-init selettore">
             <div class="stepper-button-minus meno"></div>
             <div class="stepper-input-wrap">
-              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="vegetariano" />
+              <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Il vegetariano" />
             </div>
             <div class="stepper-button-plus piu"></div>
           </div>
@@ -82,7 +82,7 @@
   <script>
   //import {carrello} from './carrello.js'
   
-  var prodotti=["nord", "sud", "grandeabbuffata", "vegetariano"]
+  var prodotti=["Benvenuti al Nord", "Benvenuti al Sud", "La grande abbuffata", "Il vegetariano"]
       import {
         Page,
         Navbar,
@@ -107,15 +107,18 @@ for(var i=0;i<prodotti.length;i++){
 if(document.getElementById(prodotti[i]).value!=0){
   carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
   switch (prodotti[i]) {
-    case "nord":
+    case "Benvenuti al Nord":
       totale=totale+(12*document.getElementById(prodotti[i]).value)
       break;
-    case "sud":
+    case "Benvenuti al Sud":
       totale=totale+(15*document.getElementById(prodotti[i]).value)
-    case "grandeabbuffata":
+      break;
+    case "La grande abbuffata":
       totale=totale+(15*document.getElementById(prodotti[i]).value)
-    case "vegetariano":
+      break;
+    case "Il vegetariano":
       totale=totale+(15*document.getElementById(prodotti[i]).value)
+      break;
     default:
       break;
   }

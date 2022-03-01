@@ -6,7 +6,7 @@
       </Navbar>
       <Block>
       <div align="center">
-      <img src="grandeabbuffata.jpg" width="70%"  />
+      <img src="La grande abbuffata.jpg" width="70%"  />
       <List simpleList>
         <ListItem title="- Selezione di formaggi e affettati misti"></ListItem>
         <ListItem title="- Flan di zucchine con salsa di toma"></ListItem>

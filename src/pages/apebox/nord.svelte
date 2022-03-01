@@ -6,7 +6,7 @@
       </Navbar>
       <Block>
       <div align="center">
-      <img src="nord.jpg" width="70%"  />
+      <img src="Benvenuti al Nord.jpg" width="70%"  />
       <List simpleList>
         <ListItem title="- Selezione di formaggi e affettati dal Nord Italia"></ListItem>
         <ListItem title="- Bottoncini di pane con lardo"></ListItem>

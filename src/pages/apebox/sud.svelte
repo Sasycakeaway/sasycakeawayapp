@@ -6,7 +6,7 @@
       </Navbar>
       <Block>
       <div align="center">
-      <img src="sud.jpg" width="70%"  />
+      <img src="Benvenuti al Sud.jpg" width="70%"  />
       <List simpleList>
         <ListItem title="- Selezione di formaggi e affettati dal Sud Italia"></ListItem>
         <ListItem title="- Cassatine siciliane salate"></ListItem>
