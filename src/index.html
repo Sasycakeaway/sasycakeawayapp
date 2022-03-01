@@ -17,19 +17,31 @@
       for(var prodotti of Object.keys(carrello))
     {
       if(piru.id==prodotti){
-        delete carrello[prodotti]
+        carrello[prodotti]--
+        if(carrello[prodotti]==0){
+          delete carrello[prodotti]
         var li=document.getElementById("cart")
         li.removeChild(document.getElementById(prodotti+"car"))
+        }else{
+          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
+        }
+        
       }else{
       }
     }
     for(var prodotti of Object.keys(trasformista))
     {
-      console.log(prodotti)
+      
       if(piru.id==prodotti){
-        delete carrello[prodotti]
+        carrello[prodotti]--
+        if(carrello[prodotti]==0){
+          delete carrello[prodotti]
         var li=document.getElementById("cart")
         li.removeChild(document.getElementById(prodotti))
+        }else{
+          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
+        }
+        
       }else{
       }
     }

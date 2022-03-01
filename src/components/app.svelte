@@ -106,6 +106,7 @@ var img = document.createElement('img');
 var qty=document.createElement("p")
 var pino=document.createTextNode("Quantità " + Object.values(carrello)[i]);
 qty.setAttribute("class", "qty")
+qty.setAttribute("id",Object.getOwnPropertyNames(carrello)[i]+"qty" )
 qty.appendChild(pino);
 node.append(qty)
 document.getElementById('cart').appendChild(node);
