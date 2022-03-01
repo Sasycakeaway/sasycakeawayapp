@@ -28,7 +28,7 @@
           after="15€"
          text="Formaggi e affettati dal Sud, cassatine salate, babà con pecorino,zeppole salate, biscotti salati e tette delle monache salate"
         >
-          <img slot="media" src="Benvenuti al sud.jpg" width="80" />
+          <img slot="media" src="Benvenuti al Sud.jpg" width="80" />
                   <div class="stepper stepper-raised stepper-fill stepper-init selettore">
             <div class="stepper-button-minus meno"></div>
             <div class="stepper-input-wrap">

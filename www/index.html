@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script  src="pages/carrello.js"></script>
+  <script  src="carrello.js"></script>
+  <script  >
+    let totale=0
+  </script>
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -17,6 +20,20 @@
       for(var prodotti of Object.keys(carrello))
     {
       if(piru.id==prodotti){
+        switch (piru.id) {
+    case "nord":
+      totale=totale-12
+      break;
+    case "sud":
+      totale=totale-15
+    case "grandeabbuffata":
+      totale=totale-15
+    case "vegetariano":
+      totale=totale-15
+    default:
+    totale=totale-5
+  }
+        document.getElementById("tot").innerText="Totale=" + totale + "€"
         carrello[prodotti]--
         if(carrello[prodotti]==0){
           delete carrello[prodotti]
@@ -33,6 +50,8 @@
     {
       
       if(piru.id==prodotti){
+        totale=totale-18
+        document.getElementById("tot").innerText="Totale=" + totale + "€"
         carrello[prodotti]--
         if(carrello[prodotti]==0){
           delete carrello[prodotti]
@@ -59,7 +78,7 @@
   
   
   <!-- built styles file will be auto injected -->
-  <script type="module" crossorigin src="assets/index.74546277.js"></script>
+  <script type="module" crossorigin src="assets/index.c15cf8c7.js"></script>
   <link rel="modulepreload" href="assets/vendor.f96a0567.js">
   <link rel="stylesheet" href="assets/index.a1be6fb3.css">
 </head>

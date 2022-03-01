@@ -45,7 +45,7 @@
         after="20€ al KG"
         
       >
-        <img slot="media" src="brut ma bon.jpg" width="80" />
+        <img slot="media" src="Brut ma bon.jpg" width="80" />
                 <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
