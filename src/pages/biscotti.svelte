@@ -90,7 +90,7 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="Cantucci.jpg" width="80" />
+    <img slot="media" src="can.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -104,7 +104,7 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="Canestrelli.jpg" width="80" />
+    <img slot="media" src="strelli.jpg" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
@@ -160,7 +160,7 @@
     after="20€ al KG"
     
     >
-    <img slot="media" src="Diamantini.JPG" width="80" />
+    <img slot="media" src="dia.JPG" width="80" />
             <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap num">

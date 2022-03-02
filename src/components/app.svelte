@@ -86,7 +86,16 @@ document.getElementById('cart').appendChild(node);
 for(var i=0;i<Object.keys(carrello).length;i++){
   var nome=Object.getOwnPropertyNames(carrello)[i]
   var img = document.createElement('img');
-  img.src = Object.getOwnPropertyNames(carrello)[i] + '.jpg';
+  if(Object.getOwnPropertyNames(carrello)[i]=="Cantucci"){
+    img.src = "can.jpg"
+  }else if(Object.getOwnPropertyNames(carrello)[i]=="Canestrelli"){
+    img.src="strelli.jpg"
+  }else if(Object.getOwnPropertyNames(carrello)[i]=="Diamantini"){
+    img.src = "dia.JPG";
+  }else{
+    img.src=Object.getOwnPropertyNames(carrello)[i] + ".jpg"
+  }
+  
   img.width="40"
   img.className="imgcar"
 
