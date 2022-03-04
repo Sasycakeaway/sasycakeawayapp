@@ -197,16 +197,20 @@ var prodotti=["Paste di meliga","Baci di dama","Brut ma bon","Meringhe","Nocciol
       Stepper
     } from 'framework7-svelte';
 function check(){
-for(var i=0;i<prodotti.length;i++){
+if(JSON.stringify(carrello)!="{}"){
+  for(var i=0;i<prodotti.length;i++){
   if(document.getElementById(prodotti[i]).value!=0){ 
-carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
-totale=totale+(5*document.getElementById(prodotti[i]).value)
+    carrello[prodotti[i]]=parseInt(carrello[prodotti[i]]) +  parseInt(document.getElementById(prodotti[i]).value)
+    totale=totale+(5*document.getElementById(prodotti[i]).value)
   }else{}
 }
-
-
+}else{
+for(var i=0;i<prodotti.length;i++){
+  if(document.getElementById(prodotti[i]).value!=0){ 
+    carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
+    totale=totale+(5*document.getElementById(prodotti[i]).value)
+  }else{}
 }
-function prov(){
-    console.log("ciao")
-  }
+}
+}
   </script>

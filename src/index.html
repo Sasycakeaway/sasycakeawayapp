@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <script  src="carrello.js"></script>
   <script  >
-    alert("Ciao, questa è la beta dell'applicazione di sasy's cake away, specifica nelle note dell'ordine se gli ordini vengono fatti per scopi di testing o se si vuole effettivamente effettuare un ordine")
+    //alert("Ciao, questa è la beta dell'applicazione di sasy's cake away, specifica nelle note dell'ordine se gli ordini vengono fatti per scopi di testing o se si vuole effettivamente effettuare un ordine")
     let totale=0
     
   </script>
@@ -21,19 +21,23 @@
     function pop(piru){
       for(var prodotti of Object.keys(carrello))
     {
+      console.log(piru.id)
       if(piru.id==prodotti){
-        switch (piru.id) {
-    case "nord":
-      totale=totale-12
-      break;
-    case "sud":
-      totale=totale-15
-    case "grandeabbuffata":
-      totale=totale-15
-    case "vegetariano":
-      totale=totale-15
-    default:
-    totale=totale-5
+            switch (piru.id) {
+        case "Benvenuti al Nord":
+          totale=totale-12
+          break;
+        case "Benvenuti al Sud":
+          totale=totale-15
+          break;
+        case "La grande abbuffata":
+          totale=totale-15;
+          break;
+        case "Il vegetariano":
+          totale=totale-15
+          break;
+        default:
+          totale=totale-5
   }
         document.getElementById("tot").innerText="Totale=" + totale + "€"
         carrello[prodotti]--
@@ -50,17 +54,22 @@
     }
     for(var prodotti of Object.keys(trasformista))
     {
-      
       if(piru.id==prodotti){
         totale=totale-18
         document.getElementById("tot").innerText="Totale=" + totale + "€"
-        carrello[prodotti]--
-        if(carrello[prodotti]==0){
-          delete carrello[prodotti]
-        var li=document.getElementById("cart")
-        li.removeChild(document.getElementById(prodotti))
-        }else{
+        console.log("Qua ci sono4")
+        trasformista[piru.id]=0
+        console.log(trasformista)
+          if(piru.id==0){
+            delete carrello[prodotti]
+            var li=document.getElementById("cart")
+            console.log("Qua ci sono")
+            li.removeChild(document.getElementById(piru.id))
+            console.log("Qua ci sono2")
+          }
+        else{
           document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
+          console.log("Qua ci sono3")
         }
         
       }else{

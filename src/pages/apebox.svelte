@@ -103,6 +103,30 @@
         Stepper
       } from 'framework7-svelte';
       function check(){
+if(JSON.stringify(carrello)!="{}"){
+  for(var i=0;i<prodotti.length;i++){
+    if(document.getElementById(prodotti[i]).value!=0){
+  carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value) + parseInt(carrello[prodotti[i]])
+  switch (prodotti[i]) {
+    case "Benvenuti al Nord":
+      totale=totale+(12*document.getElementById(prodotti[i]).value)
+      break;
+    case "Benvenuti al Sud":
+      totale=totale+(15*document.getElementById(prodotti[i]).value)
+      break;
+    case "La grande abbuffata":
+      totale=totale+(15*document.getElementById(prodotti[i]).value)
+      break;
+    case "Il vegetariano":
+      totale=totale+(15*document.getElementById(prodotti[i]).value)
+      break;
+    default:
+      break;
+  }
+}
+  }
+}
+else{
 for(var i=0;i<prodotti.length;i++){
 if(document.getElementById(prodotti[i]).value!=0){
   carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
@@ -124,6 +148,6 @@ if(document.getElementById(prodotti[i]).value!=0){
   }
 }
 }
-      }
-  
-    </script>
+}
+}
+</script>
