@@ -25,6 +25,14 @@
     </Card>
   </Link>
   </Col>
+  <Col >  
+    <Link href="/fresca/">    
+    <Card class="apebox">
+      <span slot="header"><img src="./pasticceria.png" width="50px"/></span>
+      <span slot="content"><div align="center">P.fresca</div></span>
+  </Card>
+</Link>
+</Col>
   </Row>
 </div>
 </Page>
