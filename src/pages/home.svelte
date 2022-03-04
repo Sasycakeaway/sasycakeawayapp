@@ -30,7 +30,6 @@
 </Page>
 <script >
 
- 
   import {
     Page,
     Navbar,

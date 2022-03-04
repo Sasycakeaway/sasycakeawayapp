@@ -1,4 +1,4 @@
-<App { ...f7params }>
+<App { ...f7params } >
 
  <!-- Views/Tabs container -->
  <Views tabs class="safe-areas">
@@ -7,19 +7,19 @@
     <Link tabLink="#view-home" tabLinkActive iconIos="f7:house" iconAurora="f7:house" iconMd="f7:house" text="Home" />
     <Link tabLink="#view-carrello"  iconIos="f7:cart" iconAurora="f7:cart" iconMd="f7:cart" text="Carrello" on:click={prova}/>
     <Link tabLink="#view-contatti" iconIos="f7:map" iconAurora="f7:map" iconMd="f7:map" text="Contatti"/>
+    <Link tabLink="#view-info" iconIos="f7:info_circle" iconAurora="f7:info_circle" iconMd="f7:info_circle" text="Informazioni"/>
   </Toolbar>
 
   <!-- Your main view/tab, should have "view-main" class. It also has "tabActive" prop -->
   <View id="view-home" main tab tabActive url="/" />
   <View id="view-carrello" tab url="/carrello/" />
   <View id="view-contatti" tab url="/contatti/" />
-
+  <View id="view-info" tab url="/about/" />
 
 </Views>
 
 </App>
 <script>
-      // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getPerformance } from "firebase/performance";
@@ -35,7 +35,6 @@ const firebaseConfig = {
   measurementId: "G-V1PLFF96WQ"
 };
 const app = initializeApp(firebaseConfig);
-// Initialize Performance Monitoring and get a reference to the service
 const perf = getPerformance(app);
 const analytics = getAnalytics(app);
   import { onMount } from 'svelte';
@@ -49,11 +48,10 @@ const analytics = getAnalytics(app);
     Toolbar, 
     Views,
   } from 'framework7-svelte';
-
   import capacitorApp from '../js/capacitor-app';
   import routes from '../js/routes';
   import store from '../js/store';
-
+  
   const device = getDevice();
   // Framework7 Parameters
   let f7params = {
@@ -89,6 +87,7 @@ const analytics = getAnalytics(app);
       // Call F7 APIs here
     });
   })
+
   function prova(){
     document.getElementById("tot").innerText="Totale=" + totale + "€"
     document.getElementById('cart').innerHTML="";

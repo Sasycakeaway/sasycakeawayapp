@@ -11,6 +11,9 @@ import VegetarianoPage from '../pages/apebox/vegetariano.svelte';
 import PrenotazioniPage from '../pages/prenotazioni.svelte';
 import ConfermaPage from '../pages/conferma.svelte'
 import ContattiPage from '../pages/contatti.svelte'
+import AboutPage from '../pages/about.svelte'
+import PrivacyPage from '../pages/privacy.svelte'
+import InfoPage from '../pages/info.svelte'
 var routes = [
   {
     path: '/',
@@ -59,6 +62,18 @@ var routes = [
   {
     path: '/contatti',
     component: ContattiPage,
+  },
+  {
+    path:'/about',
+    component: AboutPage,
+  },
+  {
+    path: '/privacy',
+    component: PrivacyPage,
+  },
+  {
+    path: '/info',
+    component: InfoPage,
   },
   {
     path: '/request-and-load/user/:userId/',
