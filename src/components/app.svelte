@@ -20,23 +20,7 @@
 
 </App>
 <script>
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getPerformance } from "firebase/performance";
 
-
-const firebaseConfig = {
-  apiKey: "AIzaSyCcnkrkY74xBbIDf4UZdYH4bZwXaSvh1nM",
-  authDomain: "sasy-s-cake-away.firebaseapp.com",
-  projectId: "sasy-s-cake-away",
-  storageBucket: "sasy-s-cake-away.appspot.com",
-  messagingSenderId: "49278530877",
-  appId: "1:49278530877:web:5d25c00c2d84531efb4154",
-  measurementId: "G-V1PLFF96WQ"
-};
-const app = initializeApp(firebaseConfig);
-const perf = getPerformance(app);
-const analytics = getAnalytics(app);
   import { onMount } from 'svelte';
   import { getDevice }  from 'framework7/lite-bundle';
   import {
