@@ -134,6 +134,11 @@ var node = document.createElement('li');
 node.id=Object.getOwnPropertyNames(trasformista)[i]
 node.appendChild(document.createTextNode("Il trasformista"));
 node.appendChild(img);
+//var ing=document.createElement("p")
+//var pin=document.createTextNode(trasformista[i].join(","));
+//ing.setAttribute("class", "qty")
+//ing.appendChild(pin);
+//node.append(ing)
 var img = document.createElement('img');
   img.src = 'delete.png';
   img.width="70"

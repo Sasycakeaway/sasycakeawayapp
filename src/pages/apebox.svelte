@@ -106,7 +106,12 @@
 if(JSON.stringify(carrello)!="{}"){
   for(var i=0;i<prodotti.length;i++){
     if(document.getElementById(prodotti[i]).value!=0){
-  carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value) + parseInt(carrello[prodotti[i]])
+      if(carrello[prodotti[i]]==null){
+        carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value)
+      }else{
+        carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value) + parseInt(carrello[prodotti[i]])
+      }
+  
   switch (prodotti[i]) {
     case "Benvenuti al Nord":
       totale=totale+(12*document.getElementById(prodotti[i]).value)

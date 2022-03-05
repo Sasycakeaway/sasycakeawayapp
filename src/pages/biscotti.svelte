@@ -200,7 +200,11 @@ function check(){
 if(JSON.stringify(carrello)!="{}"){
   for(var i=0;i<prodotti.length;i++){
   if(document.getElementById(prodotti[i]).value!=0){ 
-    carrello[prodotti[i]]=parseInt(carrello[prodotti[i]]) +  parseInt(document.getElementById(prodotti[i]).value)
+    if(carrello[prodotti[i]]==null){
+        carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value)
+      }else{
+        carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value) + parseInt(carrello[prodotti[i]])
+      }
     totale=totale+(5*document.getElementById(prodotti[i]).value)
   }else{}
 }

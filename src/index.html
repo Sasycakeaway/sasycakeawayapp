@@ -59,18 +59,13 @@
         document.getElementById("tot").innerText="Totale=" + totale + "€"
         console.log("Qua ci sono4")
         trasformista[piru.id]=0
-        console.log(trasformista)
-          if(piru.id==0){
-            delete carrello[prodotti]
+        console.log(piru.id)
+          delete carrello[prodotti]
             var li=document.getElementById("cart")
             console.log("Qua ci sono")
             li.removeChild(document.getElementById(piru.id))
             console.log("Qua ci sono2")
-          }
-        else{
-          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
-          console.log("Qua ci sono3")
-        }
+        
         
       }else{
       }
