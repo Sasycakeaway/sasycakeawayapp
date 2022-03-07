@@ -98,21 +98,11 @@
     import {
       Page,
       Navbar,
-      NavLeft,
       NavTitle,
       NavTitleLarge,
-      NavRight,
-      Link,
-      Toolbar,
-      Block,
-      BlockTitle,
       List,
       ListItem,
-      Row,
-      Col,
       Button,
-      Card,
-      ListInput
     } from 'framework7-svelte';
     function manda(){
       emailjs.send("service_ccwtjlr","template_q7p6jls",{
@@ -124,5 +114,7 @@
       data: document.getElementById("consegna").value,
       note: document.getElementById("note").value,
       });
+      totale=0;
+      carrello={}
     }
   </script>

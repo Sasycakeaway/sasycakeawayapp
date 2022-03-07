@@ -76,8 +76,9 @@
       <img slot="media" src="trasformista.png" width="80" />
     </ListItem>
       </List>
+      <Block>
       <Button fill on:click={check} class="butconf">Conferma la prenotazione</Button>
-  
+    </Block>
   </Page>
   <script>
   //import {carrello} from './carrello.js'
@@ -86,21 +87,15 @@
       import {
         Page,
         Navbar,
-        NavLeft,
+      
         NavTitle,
         NavTitleLarge,
-        NavRight,
-        Link,
-        Toolbar,
-        Block,
-        BlockTitle,
+
         List,
         ListItem,
-        Row,
-        Col,
+      
         Button,
-        Card,
-        Stepper
+        Block
       } from 'framework7-svelte';
       function check(){
 if(JSON.stringify(carrello)!="{}"){

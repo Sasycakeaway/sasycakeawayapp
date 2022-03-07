@@ -1,8 +1,6 @@
 <Page name="about">
-    <Navbar large sliding={false}>
-  
+    <Navbar sliding={false}>
       <NavTitle sliding>Informazioni</NavTitle>
-      <NavTitleLarge>Informazioni</NavTitleLarge>
     </Navbar>
 
     <div align="center">
@@ -29,21 +27,10 @@
       import {
         Page,
         Navbar,
-        NavLeft,
         NavTitle,
-        NavTitleLarge,
-        NavRight,
         Link,
-        Toolbar,
         Block,
-        BlockTitle,
         List,
         ListItem,
-        Row,
-        Col,
-        Button,
-        Card,
-        Stepper,
-        Toggle,
       } from 'framework7-svelte';
     </script>

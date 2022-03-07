@@ -1,8 +1,7 @@
 <Page name="contatti">
     <!-- Top Navbar -->
-    <Navbar large sliding={false} backLink="Back">
-      <NavTitle sliding>Sasycakeaway</NavTitle>
-      <NavTitleLarge>Sasycakeaway</NavTitleLarge>
+    <Navbar sliding={false}>
+      <NavTitle sliding>Contatti</NavTitle>
     </Navbar>
     <h6>&nbsp;</h6>
     <div align="center">
@@ -22,20 +21,9 @@
     import {
       Page,
       Navbar,
-      NavLeft,
       NavTitle,
-      NavTitleLarge,
-      NavRight,
-      Link,
-      Toolbar,
       Block,
-      BlockTitle,
       List,
       ListItem,
-      Row,
-      Col,
-      Button,
-      Card,
-      ListInput
     } from 'framework7-svelte';
   </script>

@@ -1,13 +1,16 @@
 <Page name="pastfresca">
     <!-- Top Navbar -->
     <Navbar large sliding={false} backLink="Back">
-      <NavTitle sliding>Sasycakeaway</NavTitle>
-      <NavTitleLarge>Sasycakeaway</NavTitleLarge>
+      <NavTitle sliding>Pasticceria fresca</NavTitle>
+      <NavTitleLarge>Pasticceria fresca</NavTitleLarge>
     </Navbar>
+    <Block>
+      <p>Per lo strudel di mele e la pastiera ogni porzione pesa 250G, se vengono selezionate 2 porzioni verrà fatto un solo strudel da 500G e così via, per richieste specifiche scrivere nelle note dell'ordine</p>
+    </Block>
     <List mediaList>
         <ListItem
           title="Zeppole di San Giuseppe"
-          after="20€ al KG"
+          after="3€ al pezzo"
           
         >
           <img slot="media" src="Zeppole.jpg" width="80" />
@@ -22,10 +25,9 @@
   
         </ListItem>
   
-        <ListItem
+       <ListItem
           title="Pastiera Napoletana"
-          after="20€ al KG"
-          
+          after="23€ al KG"
         >
           <img slot="media" src="Pastiera.jpg" width="80" />
                   <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -35,11 +37,11 @@
             </div>
             <div class="stepper-button-plus piu"></div>
           </div>
-        </ListItem>
+        </ListItem> 
   
         <ListItem
           title="Cannoli siciliani"
-          after="20€ al KG"
+          after="3€ al pezzo"
           
         >
           <img slot="media" src="Cannoli siciliani.jpg" width="80" />
@@ -52,7 +54,7 @@
           </div>
         </ListItem>
   
-        <ListItem
+        <!--<ListItem
         title="Piccidde’t castelluccese"
         after="20€ al KG"
         
@@ -65,11 +67,11 @@
             </div>
             <div class="stepper-button-plus piu"></div>
           </div>
-      </ListItem>
+      </ListItem> -->
   
       <ListItem
       title="Pasticciotti Leccesi"
-      after="20€ al KG"
+      after="2,5€ al pezzo"
      
     >
       <img slot="media" src="Pasticciotti.jpg" width="80" />
@@ -81,8 +83,21 @@
             <div class="stepper-button-plus piu"></div>
           </div>
     </ListItem>
-  
-      <ListItem
+    <ListItem
+    title="Profiteroles"
+    after="4€ a porzione di 4"
+   
+  >
+    <img slot="media" src="Profiteroles.jpg" width="80" />
+            <div class="stepper stepper-raised stepper-fill stepper-init selettore">
+          <div class="stepper-button-minus meno"></div>
+          <div class="stepper-input-wrap">
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Profiteroles" class="num"/>
+          </div>
+          <div class="stepper-button-plus piu"></div>
+        </div>
+  </ListItem>
+    <!-- <ListItem
       title="Bonet piemontese"
       after="20€ al KG"
       
@@ -109,11 +124,10 @@
             </div>
             <div class="stepper-button-plus piu"></div>
           </div>
-      </ListItem>
+      </ListItem>-->
       <ListItem
       title="Strudel tradizionale di Mele "
-      after="20€ al KG"
-      
+      after="23€ al KG"
       >
       <img slot="media" src="Strudel di mele.jpg" width="80" />
               <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -125,30 +139,24 @@
           </div>
       </ListItem>
       </List>
+      <Block>
       <Button fill on:click={check} class="butconf" >Aggiungi al carrello</Button>
-  
+    </Block>
   </Page>
   <script >
   
-   let prodotti=["Zeppole", "Pastiera", "Cannoli siciliani", "Piccidde't", "Pasticciotti", "Bonet", "Tiramisù", "Strudel di mele"]
+   let prodotti=["Zeppole", "Cannoli siciliani","Pasticciotti" , "Strudel di mele","Pastiera" , "Profiteroles"]
+   // "Piccidde't",  "Bonet", "Tiramisù" attualmente disabilitato
     import {
       Page,
       Navbar,
-      NavLeft,
+
       NavTitle,
       NavTitleLarge,
-      NavRight,
-      Link,
-      Toolbar,
       Block,
-      BlockTitle,
       List,
       ListItem,
-      Row,
-      Col,
       Button,
-      Card,
-      ListInput
     } from 'framework7-svelte';
     function check(){
 if(JSON.stringify(carrello)!="{}"){
@@ -160,14 +168,58 @@ if(JSON.stringify(carrello)!="{}"){
       }else{
         carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value) + parseInt(carrello[prodotti[i]])
       }
-    totale=totale+(5*document.getElementById(prodotti[i]).value)
+      switch (prodotti[i]) {
+        case "Zeppole":
+          console.log("Ci sono")
+          totale=totale+(3*document.getElementById(prodotti[i]).value)
+          break;
+        case "Cannoli siciliani":
+          totale=totale+(3*document.getElementById(prodotti[i]).value);
+          break;
+        case "Pasticciotti":
+          totale=totale+(2.5*document.getElementById(prodotti[i]).value);
+          break;
+        case "Strudel di mele":
+          totale=totale+(5.75*document.getElementById(prodotti[i]).value);
+          break;
+        case "Pastiera":
+          totale=totale+(5.75*document.getElementById(prodotti[i]).value);
+          break;
+        case "Profiteroles":
+          totale=totale+(4*document.getElementById(prodotti[i]).value);
+          break;
+        default:
+          break;
+      }
+    
   }else{}
 }
 }else{
 for(var i=0;i<prodotti.length;i++){
   if(document.getElementById(prodotti[i]).value!=0){ 
     carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
-    totale=totale+(5*document.getElementById(prodotti[i]).value)
+    switch (prodotti[i]) {
+        case "Zeppole":
+          totale=totale+(3*document.getElementById(prodotti[i]).value)
+          break;
+        case "Cannoli siciliani":
+        totale=totale+(3*document.getElementById(prodotti[i]).value);
+          break;
+        case "Pasticciotti":
+        totale=totale+(2.5*document.getElementById(prodotti[i]).value);
+        break;
+        case "Strudel di mele":
+        totale=totale+(5.75*document.getElementById(prodotti[i]).value);
+        break;
+        case "Pastiera":
+        totale=totale+(5.75*document.getElementById(prodotti[i]).value);
+        break;
+        case "Profiteroles":
+          totale=totale+(4*document.getElementById(prodotti[i]).value);
+          break;
+        default:
+          break;
+      }
   }else{}
 }
 }

@@ -1,8 +1,7 @@
 <Page name="home" >
 
-  <Navbar sliding={false} backLink="Back">
+  <Navbar sliding={false}>
     <NavTitle sliding={false}>Sasy's cake away</NavTitle>
-    <NavTitleLarge>Sasy's cake away</NavTitleLarge>
   </Navbar>
   <Block strong>
     <p>Ciao, benvenuto nell'app di Sasy's cake away</p>
@@ -41,19 +40,11 @@
   import {
     Page,
     Navbar,
-    NavLeft,
     NavTitle,
-    NavTitleLarge,
-    NavRight,
     Link,
-    Toolbar,
     Block,
-    BlockTitle,
-    List,
-    ListItem,
     Row,
     Col,
-    Button,
     Card
   } from 'framework7-svelte';
   let user="prova"

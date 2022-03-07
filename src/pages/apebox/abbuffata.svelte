@@ -23,20 +23,12 @@
   import {
     Page,
     Navbar,
-    NavLeft,
     NavTitle,
     NavTitleLarge,
-    NavRight,
-    Link,
-    Toolbar,
     Block,
-    BlockTitle,
     List,
     ListItem,
-    Row,
-    Col,
-    Button,
-    Card
+
   } from 'framework7-svelte';
 
 </script>

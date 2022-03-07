@@ -21,7 +21,6 @@
     function pop(piru){
       for(var prodotti of Object.keys(carrello))
     {
-      console.log(piru.id)
       if(piru.id==prodotti){
             switch (piru.id) {
         case "Benvenuti al Nord":
@@ -35,6 +34,24 @@
           break;
         case "Il vegetariano":
           totale=totale-15
+          break;
+        case "Zeppole":
+          totale=totale-3
+          break;
+        case "Cannoli siciliani":
+        totale=totale-3
+          break;
+        case "Pasticciotti":
+        totale=totale-2.5
+        break;
+        case "Strudel di mele":
+        totale=totale-5.75
+        break;
+        case "Pastiera":
+        totale=totale-5.75
+        break;
+        case "Profiteroles":
+          totale=totale-4
           break;
         default:
           totale=totale-5
@@ -57,21 +74,10 @@
       if(piru.id==prodotti){
         totale=totale-18
         document.getElementById("tot").innerText="Totale=" + totale + "€"
-        console.log("Qua ci sono4")
         trasformista[piru.id]=0
-        console.log(trasformista)
-          if(piru.id==0){
-            delete carrello[prodotti]
+          delete carrello[prodotti]
             var li=document.getElementById("cart")
-            console.log("Qua ci sono")
             li.removeChild(document.getElementById(piru.id))
-            console.log("Qua ci sono2")
-          }
-        else{
-          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
-          console.log("Qua ci sono3")
-        }
-        
       }else{
       }
     }
@@ -89,9 +95,9 @@
   
   
   <!-- built styles file will be auto injected -->
-  <script type="module" crossorigin src="assets/index.ebdec436.js"></script>
-  <link rel="modulepreload" href="assets/vendor.f96a0567.js">
-  <link rel="stylesheet" href="assets/index.a1be6fb3.css">
+  <script type="module" crossorigin src="assets/index.b88eb52e.js"></script>
+  <link rel="modulepreload" href="assets/vendor.f05782ec.js">
+  <link rel="stylesheet" href="assets/index.4bb941ce.css">
 </head>
 <body>
   <div id="app"></div>

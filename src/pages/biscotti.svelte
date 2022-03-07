@@ -170,8 +170,9 @@
         </div>
     </ListItem>
     </List>
+    <Block>
     <Button fill on:click={check} class="butconf" >Aggiungi al carrello</Button>
-
+  </Block>
 </Page>
 <script>
 //import {carrello} from './carrello.js'
@@ -180,21 +181,12 @@ var prodotti=["Paste di meliga","Baci di dama","Brut ma bon","Meringhe","Nocciol
     import {
       Page,
       Navbar,
-      NavLeft,
       NavTitle,
       NavTitleLarge,
-      NavRight,
-      Link,
-      Toolbar,
       Block,
-      BlockTitle,
       List,
       ListItem,
-      Row,
-      Col,
       Button,
-      Card,
-      Stepper
     } from 'framework7-svelte';
 function check(){
 if(JSON.stringify(carrello)!="{}"){
