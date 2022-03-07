@@ -11,3 +11,6 @@ git clone
 npm install
 npm run build
 ```
+# PWA
+
+Link alla PWA: https://sasycakeaway.github.io/sasycakeawayapp/www
