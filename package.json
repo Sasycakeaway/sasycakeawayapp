@@ -22,7 +22,7 @@
     "Samsung >= 5"
   ],
   "dependencies": {
-    "@capacitor/android": "^3.4.1",
+    "@capacitor/android": "^3.4.3",
     "@capacitor/app": "^1.1.0",
     "@capacitor/browser": "^1.0.7",
     "@capacitor/core": "^3.4.1",

@@ -65,7 +65,7 @@
       <div class="item-inner">
         <div class="item-title item-label">Consegna</div>
         <div class="item-input-wrap" >
-          <input type="date" id="consegna" placeholder="Consegna" style="margin-left: 15px;" />
+          <input type="date" id="consegna" placeholder="Consegna" />
         </div>
       </div>
     </li>
@@ -91,7 +91,7 @@
     </label>
     </ListItem>
     </List>
-    <Button on:click={manda} href="/conferma/">Ordina</Button>
+    <Button fill on:click={manda} href="/conferma/">Ordina</Button>
   </Page>
   <script >
 
