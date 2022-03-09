@@ -124,3 +124,7 @@
     --f7-bars-bg-color: #202020;
     --f7-bars-border-color: rgba(255, 255, 255, 0.1);
   }
+.snack{
+  position: absolute;
+  top: 350px;
+}

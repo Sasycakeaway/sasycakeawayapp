@@ -36,8 +36,10 @@
     "framework7-icons": "^5.0.5",
     "framework7-svelte": "^6.3.16",
     "material-icons": "^1.10.7",
+    "node-snackbar": "^0.1.16",
     "skeleton-elements": "^3.5.0",
     "svelte": "^3.46.4",
+    "svelte-materialify": "^0.3.11",
     "swiper": "^6.8.4"
   },
   "devDependencies": {

@@ -76,13 +76,18 @@
       <img slot="media" src="trasformista.png" width="80" />
     </ListItem>
       </List>
+      <Snackbar class="snack" bind:active={snackbar} center timeout={3000}>
+        Prodotti aggiunti al carrello
+      </Snackbar>
       <Block>
       <Button fill on:click={check} class="butconf">Conferma la prenotazione</Button>
     </Block>
   </Page>
   <script>
   //import {carrello} from './carrello.js'
-  
+  import { Snackbar} from 'svelte-materialify';
+
+let snackbar = false;
   var prodotti=["Benvenuti al Nord", "Benvenuti al Sud", "La grande abbuffata", "Il vegetariano"]
       import {
         Page,
@@ -123,8 +128,10 @@ if(JSON.stringify(carrello)!="{}"){
     default:
       break;
   }
+
 }
   }
+  snackbar=true
 }
 else{
 for(var i=0;i<prodotti.length;i++){
@@ -148,6 +155,8 @@ if(document.getElementById(prodotti[i]).value!=0){
   }
 }
 }
+snackbar=true
 }
+
 }
 </script>

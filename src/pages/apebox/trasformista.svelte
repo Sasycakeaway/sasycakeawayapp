@@ -176,7 +176,9 @@
           </label>
         </ListItem>
       </List>
-      
+      <Snackbar class="snack" bind:active={snackbar} center timeout={3000}>
+        Prodotti aggiunti al carrello
+      </Snackbar>
       <Block>
       <Button fill on:click={checkino}>Aggiungi al carrello</Button>
     </Block>
@@ -184,6 +186,9 @@
 
 <script >
   var k=0
+  import { Snackbar} from 'svelte-materialify';
+
+let snackbar = false;
   var prodotti=["formnord","affnord","formsud","affsud","panelardo", "focaccia", "minipiada", "frico", "cassatine", "baba", "biscottini", "tette", "flantoma", "tartellettebacon", "riso", "quiche","tartelletteverdura", "brutsalati"]
   import {
     Page,
@@ -224,10 +229,10 @@ document.getElementById(prodotti[i]).checked=false
 }
 console.log(ingredienti)
 if(JSON.stringify(ingredienti)!="[]"){
-  console.log("Sono entrato")
 trasformista[k]=ingredienti
 k++
 totale=totale+18
+snackbar=true
 }
 
 

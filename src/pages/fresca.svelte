@@ -139,12 +139,17 @@
           </div>
       </ListItem>
       </List>
+      <Snackbar class="snack" bind:active={snackbar} center timeout={3000}>
+        Prodotti aggiunti al carrello
+      </Snackbar>
       <Block>
       <Button fill on:click={check} class="butconf" >Aggiungi al carrello</Button>
     </Block>
   </Page>
   <script >
-  
+import { Snackbar} from 'svelte-materialify';
+
+let snackbar = false;
    let prodotti=["Zeppole", "Cannoli siciliani","Pasticciotti" , "Strudel di mele","Pastiera" , "Profiteroles"]
    // "Piccidde't",  "Bonet", "Tiramisù" attualmente disabilitato
     import {
@@ -191,7 +196,7 @@ if(JSON.stringify(carrello)!="{}"){
         default:
           break;
       }
-    
+      snackbar=true
   }else{}
 }
 }else{
@@ -220,6 +225,7 @@ for(var i=0;i<prodotti.length;i++){
         default:
           break;
       }
+      snackbar=true
   }else{}
 }
 }

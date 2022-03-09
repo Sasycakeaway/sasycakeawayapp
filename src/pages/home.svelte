@@ -1,7 +1,9 @@
 <Page name="home" >
 
   <Navbar sliding={false}>
+    
     <NavTitle sliding={false}>Sasy's cake away</NavTitle>
+  
   </Navbar>
   <Block strong>
     <p>Ciao, benvenuto nell'app di Sasy's cake away</p>
@@ -34,6 +36,8 @@
 </Col>
   </Row>
 </div>
+
+
 </Page>
 <script >
 
