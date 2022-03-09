@@ -179,6 +179,9 @@
       <Snackbar class="snack" bind:active={snackbar} center timeout={3000}>
         Prodotti aggiunti al carrello
       </Snackbar>
+      <Snackbar class="snack" bind:active={snackem} center timeout={3000}>
+        Carrello vuoto
+      </Snackbar>
       <Block>
       <Button fill on:click={checkino}>Aggiungi al carrello</Button>
     </Block>
@@ -187,8 +190,10 @@
 <script >
   var k=0
   import { Snackbar} from 'svelte-materialify';
+  let snackbar = false;
+let snackem=false
+var cont=0
 
-let snackbar = false;
   var prodotti=["formnord","affnord","formsud","affsud","panelardo", "focaccia", "minipiada", "frico", "cassatine", "baba", "biscottini", "tette", "flantoma", "tartellettebacon", "riso", "quiche","tartelletteverdura", "brutsalati"]
   import {
     Page,
@@ -237,6 +242,8 @@ snackbar=true
 
 
     }
-
+if(contatore==0){
+  snackem=true
+}
 }
 </script>

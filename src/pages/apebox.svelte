@@ -79,6 +79,9 @@
       <Snackbar class="snack" bind:active={snackbar} center timeout={3000}>
         Prodotti aggiunti al carrello
       </Snackbar>
+      <Snackbar class="snack" bind:active={snackem} center timeout={3000}>
+        Carrello vuoto
+      </Snackbar>
       <Block>
       <Button fill on:click={check} class="butconf">Conferma la prenotazione</Button>
     </Block>
@@ -88,6 +91,8 @@
   import { Snackbar} from 'svelte-materialify';
 
 let snackbar = false;
+let snackem=false
+var cont=0
   var prodotti=["Benvenuti al Nord", "Benvenuti al Sud", "La grande abbuffata", "Il vegetariano"]
       import {
         Page,
@@ -106,6 +111,7 @@ let snackbar = false;
 if(JSON.stringify(carrello)!="{}"){
   for(var i=0;i<prodotti.length;i++){
     if(document.getElementById(prodotti[i]).value!=0){
+      cont++
       if(carrello[prodotti[i]]==null){
         carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value)
       }else{
@@ -131,11 +137,12 @@ if(JSON.stringify(carrello)!="{}"){
 
 }
   }
-  snackbar=true
+ 
 }
 else{
 for(var i=0;i<prodotti.length;i++){
 if(document.getElementById(prodotti[i]).value!=0){
+  cont++
   carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
   switch (prodotti[i]) {
     case "Benvenuti al Nord":
@@ -155,8 +162,12 @@ if(document.getElementById(prodotti[i]).value!=0){
   }
 }
 }
-snackbar=true
-}
 
+}
+if (cont>0) {
+  snackbar=true
+}else{
+  snackem=true
+}
 }
 </script>

@@ -174,7 +174,9 @@
     <Snackbar class="snack" bind:active={snackbar} center timeout={3000}>
       Prodotti aggiunti al carrello
     </Snackbar>
-
+    <Snackbar class="snack" bind:active={snackem} center timeout={3000}>
+      Carrello vuoto
+    </Snackbar>
     <Block>
     <Button fill on:click={check}  class="butconf" >Aggiungi al carrello</Button>
     
@@ -185,7 +187,8 @@
 <script>
 //import {carrello} from './carrello.js'
 import { Snackbar} from 'svelte-materialify';
-
+let snackem=false
+var cont=0
 let snackbar = false;
 var prodotti=["Paste di meliga","Baci di dama","Brut ma bon","Meringhe","Nocciolotti","Cantucci","Canestrelli","Frollini","Assabesi","Krumiri","Diamantini"]
     import {
@@ -202,6 +205,7 @@ function check(){
 if(JSON.stringify(carrello)!="{}"){
   for(var i=0;i<prodotti.length;i++){
   if(document.getElementById(prodotti[i]).value!=0){ 
+    cont++
     if(carrello[prodotti[i]]==null){
         carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value)
       }else{
@@ -215,9 +219,15 @@ for(var i=0;i<prodotti.length;i++){
   if(document.getElementById(prodotti[i]).value!=0){ 
     carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
     totale=totale+(5*document.getElementById(prodotti[i]).value)
+    cont++
   }else{}
 }
 }
-snackbar=true
+if (cont>0) {
+  snackbar=true
+}else{
+  snackem=true
+}
+
 }
   </script>
