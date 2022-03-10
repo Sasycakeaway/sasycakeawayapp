@@ -49,12 +49,14 @@
     // App routes
     routes: routes,
 
-    // Input settings
     input: {
       scrollIntoViewOnFocus: device.capacitor,
       scrollIntoViewCentered: device.capacitor,
     },
-    // Capacitor Statusbar settings
+    // Register service worker (only on production build)
+    serviceWorker: process.env.NODE_ENV ==='production' ? {
+      path: '/service-worker.js',
+    } : {},
     statusbar: {
       iosOverlaysWebView: true,
       androidOverlaysWebView: false,

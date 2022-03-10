@@ -85,13 +85,19 @@
   </script>
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: content:">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-
+  <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ffffff">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <title>Sasy's cake away</title>
   <script src="https://unpkg.com/focus-visible@latest/dist/focus-visible.min.js"></script>
-
+  <script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./service-worker.js');
+    });
+  }
+  </script>
   
   
 
