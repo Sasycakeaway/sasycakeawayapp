@@ -13,4 +13,4 @@ npm run build
 ```
 # PWA
 
-Link alla PWA: https://sasycakeaway.github.io/sasycakeawayapp/www
+Link alla PWA: https://sasy-s-cake-away.web.app/
