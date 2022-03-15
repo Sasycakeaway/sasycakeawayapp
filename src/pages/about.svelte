@@ -10,6 +10,7 @@
     <Block>
     <p>Questa è l'app di Sasy's Cake Away con cui puoi ordinare i tuoi dolci preferiti. 
         Quest'app usa Google Analitics per fini statistici.
+        Le icone sono state fornite da Icons8 e Framework7
     </p>
     <a class="button button-fill external" href="https://www.canlb.com/elenco_ingredienti.pdf" target="_blank">Elenco degli ingredienti</a>
 </Block>

@@ -169,6 +169,20 @@
           <div class="stepper-button-plus piu"></div>
         </div>
     </ListItem>
+    <ListItem
+    title="Cookies"
+    after="20€ al KG"
+    
+    >
+    <img slot="media" src="Cookies.jpg" width="80" />
+            <div class="stepper stepper-raised stepper-fill stepper-init selettore">
+          <div class="stepper-button-minus meno"></div>
+          <div class="stepper-input-wrap num">
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Cookies" class="num" />
+          </div>
+          <div class="stepper-button-plus piu"></div>
+        </div>
+    </ListItem>
     </List>
     
     <Snackbar class="snack" bind:active={snackbar} center timeout={3000}>
@@ -190,7 +204,7 @@ import { Snackbar} from 'svelte-materialify';
 let snackem=false
 var cont=0
 let snackbar = false;
-var prodotti=["Paste di meliga","Baci di dama","Brut ma bon","Meringhe","Nocciolotti","Cantucci","Canestrelli","Frollini","Assabesi","Krumiri","Diamantini"]
+var prodotti=["Paste di meliga","Baci di dama","Brut ma bon","Meringhe","Nocciolotti","Cantucci","Canestrelli","Frollini","Assabesi","Krumiri","Diamantini", "Cookies"]
     import {
       Page,
       Navbar,

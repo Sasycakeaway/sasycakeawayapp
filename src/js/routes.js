@@ -15,6 +15,7 @@ import AboutPage from '../pages/about.svelte'
 import PrivacyPage from '../pages/privacy.svelte'
 import InfoPage from '../pages/info.svelte'
 import PasticceriaFrescaPage from '../pages/fresca.svelte'
+import FornoPage from '../pages/forno.svelte'
 var routes = [
   {
     path: '/',
@@ -79,6 +80,10 @@ var routes = [
   {
     path: '/fresca',
     component: PasticceriaFrescaPage,
+  },
+  {
+    path: '/forno',
+    component: FornoPage,
   },
   {
     path: '/request-and-load/user/:userId/',

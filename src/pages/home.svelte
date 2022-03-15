@@ -9,35 +9,54 @@
     <p>Ciao, benvenuto nell'app di Sasy's cake away</p>
   </Block>
   <div align="center">
+    <Swiper navigation speed={500} slidesPerView={2} spaceBetween={20}>
+      <SwiperSlide> 
+        <Link href="/biscotti/">   
+        <Card class="biscotti">
+          <span slot="header"><img src="./biscuits1.png" width="50px" /></span>
+          <span slot="content"><div align="center" >Biscotti</div></span>
+      </Card>
+    </Link>
+  </SwiperSlide>
+      <SwiperSlide> 
+        <Link href="/apebox/">    
+        <Card class="apebox">
+          <span slot="header"><img src="./box1.png" width="50px"/></span>
+          <span slot="content"><div align="center">Apebox</div></span>
+      </Card>
+    </Link>
+  </SwiperSlide>
+      <SwiperSlide>
+        <Link href="/fresca/">    
+          <Card class="biscotti">
+            <span slot="header"><img src="./pasticceria.png" width="50px" class="pastimg"/></span>
+            <span slot="content">
+              <div align="center">Pasticceria fresca
+
+              </div>
+            </span>
+        </Card>
+      </Link>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Link href="/forno/">   
+        <Card class="biscotti">
+          <span slot="header"><img src="./iconcup.png" width="50px" class="imgf" /></span>
+          <span slot="content"><div align="center" >Prodotti da forno</div></span>
+      </Card>
+    </Link>
+  </SwiperSlide>
+    </Swiper>
   <Row>
-    <Col >   
-      <Link href="/biscotti/">   
-      <Card class="biscotti">
-        <span slot="header"><img src="./biscuits1.png" width="50px"/></span>
-        <span slot="content"><div align="center" >Biscotti</div></span>
-    </Card>
-  </Link>
-  </Col>
+
     <Col >  
-      <Link href="/apebox/">    
-      <Card class="apebox">
-        <span slot="header"><img src="./box1.png" width="50px"/></span>
-        <span slot="content"><div align="center">Apebox</div></span>
-    </Card>
-  </Link>
+     
   </Col>
   <Col >  
-    <Link href="/fresca/">    
-    <Card class="apebox">
-      <span slot="header"><img src="./pasticceria.png" width="50px"/></span>
-      <span slot="content"><div align="center">P.fresca</div></span>
-  </Card>
-</Link>
+    
 </Col>
   </Row>
 </div>
-
-
 </Page>
 <script >
 
@@ -49,7 +68,10 @@
     Block,
     Row,
     Col,
-    Card
+    Card,
+    Swiper,
+    SwiperSlide,
+    BlockTitle
   } from 'framework7-svelte';
   let user="prova"
   
