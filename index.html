@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script  src="carrello.js"></script>
+  <script  >
+    //alert("Ciao, questa è la beta dell'applicazione di sasy's cake away, specifica nelle note dell'ordine se gli ordini vengono fatti per scopi di testing o se si vuole effettivamente effettuare un ordine")
+    let totale=0
+    
+  </script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("XI3aGphpOi4C1--qr");
+   })();
+</script>
+
+  <script>
+    function pop(piru){
+      for(var prodotti of Object.keys(carrello))
+    {
+      if(piru.id==prodotti){
+            switch (piru.id) {
+        case "Benvenuti al Nord":
+          totale=totale-12
+          break;
+        case "Benvenuti al Sud":
+          totale=totale-15
+          break;
+        case "La grande abbuffata":
+          totale=totale-15;
+          break;
+        case "Il vegetariano":
+          totale=totale-15
+          break;
+        case "Zeppole":
+          totale=totale-3
+          break;
+        case "Cannoli siciliani":
+        totale=totale-3
+          break;
+        case "Pasticciotti":
+        totale=totale-2.5
+        break;
+        case "Strudel di mele":
+        totale=totale-5.75
+        break;
+        case "Pastiera":
+        totale=totale-5.75
+        break;
+        case "Profiteroles":
+          totale=totale-4
+          break;
+        default:
+          totale=totale-5
+  }
+        document.getElementById("tot").innerText="Totale=" + totale + "€"
+        carrello[prodotti]--
+        if(carrello[prodotti]==0){
+          delete carrello[prodotti]
+        var li=document.getElementById("cart")
+        li.removeChild(document.getElementById(prodotti+"car"))
+        }else{
+          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
+        }
+        
+      }else{
+      }
+    }
+    for(var prodotti of Object.keys(trasformista))
+    {
+      if(piru.id==prodotti){
+        totale=totale-18
+        document.getElementById("tot").innerText="Totale=" + totale + "€"
+        trasformista[piru.id]=0
+          delete carrello[prodotti]
+            var li=document.getElementById("cart")
+            li.removeChild(document.getElementById(piru.id))
+      }else{
+      }
+    }
+  }
+  </script>
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <link rel="manifest" href="assets/manifest.6c5e9702.json">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Sasy's cake away</title>
+  <script src="https://unpkg.com/focus-visible@latest/dist/focus-visible.min.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./service-worker.js');
+    });
+  }
+  </script>
+  
+  
+
+                      
+  <!-- built styles file will be auto injected -->
+  <script type="module" crossorigin src="assets/index.68f8de81.js"></script>
+  <link rel="modulepreload" href="assets/vendor.aabbf90c.js">
+  <link rel="stylesheet" href="assets/vendor.368945df.css">
+  <link rel="stylesheet" href="assets/index.3b484785.css">
+</head>
+<body>
+  <div id="app"></div>
+  
+  
+</body>
+
+</html>

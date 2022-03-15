@@ -1,1 +1,0 @@
-let totale=0
