@@ -24,7 +24,6 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/`,
-        `/assets`,
       ])
           .then(() => self.skipWaiting());
     })

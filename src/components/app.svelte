@@ -73,7 +73,10 @@
       // Call F7 APIs here
     });
   })
-
+  if(navigator.onLine){
+ } else {
+  alert('Il tuo dispositivo è offline, tutti gli ordini eseguiti non verranno registrati e le immagini dei prodotti non verranno visualizzate correttamente.');
+ }
   function prova(){
     document.getElementById("tot").innerText="Totale=" + totale + "€"
     document.getElementById('cart').innerHTML="";
