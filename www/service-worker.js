@@ -1,7 +1,7 @@
 /*
  *
- *  Air Horner, Sasy's Cake Away
- *  Copyright 2015 Google Inc. 2022 Andrea Canale All rights reserved.
+ *  Air Horner
+ *  Copyright 2015 Google Inc. All rights reserved.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -17,13 +17,13 @@
  *
  */
 
-const version = "1.1";
-const cacheName = `Sasy's Cake Away-${version}`;
+const version = "0.1";
+const cacheName = `snAcks-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `/`,
+        `/*`,
       ])
           .then(() => self.skipWaiting());
     })
