@@ -18,12 +18,19 @@
 </script>
 
   <script>
-    function pop(piru){
+      
+      function pop(piru) {
       for(var prodotti of Object.keys(carrello))
     {
       if(piru.id==prodotti){
-            switch (piru.id) {
-        case "Benvenuti al Nord":
+          switch (piru.id) {
+              case "Muf":
+                  totale = totale - 2.5;
+                  break;
+              case "Cap":
+                  totale = totale - 3;
+                  break;
+              case "Benvenuti al Nord":
           totale=totale-12
           break;
         case "Benvenuti al Sud":
@@ -53,9 +60,11 @@
         case "Profiteroles":
           totale=totale-4
           break;
-        default:
-          totale=totale-5
-  }
+              default:
+                 totale = totale - 5;
+                    break;
+          }
+          
         document.getElementById("tot").innerText="Totale=" + totale + "€"
         carrello[prodotti]--
         if(carrello[prodotti]==0){
@@ -68,7 +77,8 @@
         
       }else{
       }
-    }
+          }
+
     for(var prodotti of Object.keys(trasformista))
     {
       if(piru.id==prodotti){
@@ -103,10 +113,10 @@
 
                       
   <!-- built styles file will be auto injected -->
-  <script type="module" crossorigin src="assets/index.704b4d3e.js"></script>
-  <link rel="modulepreload" href="assets/vendor.aabbf90c.js">
+  <script type="module" crossorigin src="assets/index.9c85945d.js"></script>
+  <link rel="modulepreload" href="assets/vendor.77f00439.js">
   <link rel="stylesheet" href="assets/vendor.368945df.css">
-  <link rel="stylesheet" href="assets/index.3b484785.css">
+  <link rel="stylesheet" href="assets/index.52511fe9.css">
 </head>
 <body>
   <div id="app"></div>

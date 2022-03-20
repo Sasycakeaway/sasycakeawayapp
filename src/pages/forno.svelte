@@ -5,7 +5,7 @@
     <NavTitleLarge>Prodotti da forno</NavTitleLarge>
   </Navbar>
   <Block>
-    <!--<p>Ogni sacchetto pesa 250G, ad esempio se vengono ordinati 2 sacchetti ne verra fatto solo uno da 500G e così via, per richieste specifiche scrivere nelle note dell'ordine</p>-->
+    <!--<p>Ogni sacchetto pesa 250G, ad esempio se vengono ordinati 2 sacchetti ne verra fatto solo uno da 500G e cosï¿½ via, per richieste specifiche scrivere nelle note dell'ordine</p>-->
   </Block>
     <List mediaList>
       <ListItem
@@ -42,7 +42,7 @@
 
       <ListItem
         title="Brownies"
-        after="20&euro al KG"
+        after="3&euro al pezzo"
         
       >
         <img slot="media" src="Brownies.jpg" width="80" />
@@ -57,14 +57,14 @@
 
       <ListItem
       title="Cakepop"
-      after="20&euro al KG"
+      after="3.5&euro al KG"
       
     >
-      <img slot="media" src="Cakepop.jpg" width="80" />
+      <img slot="media" src="Torta su stecco.jpg" width="80" />
               <div class="stepper stepper-raised stepper-fill stepper-init selettore">
           <div class="stepper-button-minus meno"></div>
           <div class="stepper-input-wrap">
-            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Cakepop" class="num"/>
+            <input type="text" value="0" min="0" max="100" step="1" autorepeat={false} wraps={false}  id="Torta su stecco" class="num"/>
           </div>
           <div class="stepper-button-plus piu"></div>
         </div>
@@ -91,7 +91,7 @@ import { Snackbar} from 'svelte-materialify';
 let snackem=false
 var cont=0
 let snackbar = false;
-var prodotti=["Cupcake", "Muffin", "Brownies", "Cakepop"]
+var prodotti=["Cupcake", "Muffin", "Brownies", "Torta su stecco"]
     import {
       Page,
       Navbar,
@@ -112,16 +112,12 @@ if(JSON.stringify(carrello)!="{}"){
       }else{
         carrello[prodotti[i]]=parseInt(document.getElementById(prodotti[i]).value) + parseInt(carrello[prodotti[i]])
       }
-      console.log("SOKM")
-      switch(prodotti[i]){
-          case "Cupcake":
-            totale=totale+3
-             break;
-           case "Muffin":
-            totale=totale+2.5
-             break;
-                  default:
-                break;
+      if(prodotti[i]=="Cupcake" || prodotti[i]=="Brownies"){
+        totale=totale+3
+      }else if(prodotti[i]=="Muffin"){
+        totale=totale+2.5
+      }else{
+        totale=totale+3.5
       }
   }else{}
 }
@@ -129,16 +125,12 @@ if(JSON.stringify(carrello)!="{}"){
 for(var i=0;i<prodotti.length;i++){
   if(document.getElementById(prodotti[i]).value!=0){ 
     carrello[prodotti[i]]=document.getElementById(prodotti[i]).value
-    console.log("SOKPé")
-          switch(prodotti[i]){
-          case "Cupcake":
-            totale=totale+3
-             break;
-           case "Muffin":
-            totale=totale+2.5
-             break;
-            default:
-                break;
+    if(prodotti[i]=="Cupcake" || prodotti[i]=="Brownies"){
+        totale=totale+3
+      }else if(prodotti[i]=="Muffin"){
+        totale=totale+2.5
+      }else{
+        totale=totale+3.5
       }
     cont++
   }else{}

@@ -17,14 +17,13 @@
  *
  */
 
-const version = "1.1";
+const version = "1.2";
 const cacheName = `Sasy's Cake Away-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `/`,
-        `/assets`,
+        `/`
       ])
           .then(() => self.skipWaiting());
     })
