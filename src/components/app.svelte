@@ -117,7 +117,7 @@ var img = document.createElement('img');
   img.className="cestino"
   img.id=Object.getOwnPropertyNames(carrello)[i]
   img.setAttribute("onclick", "pop(this)")
-
+  console.log(Object.getOwnPropertyNames(carrello)[i])
   node.appendChild(img);
 var qty=document.createElement("p")
 var pino=document.createTextNode("Quantità " + Object.values(carrello)[i]);
