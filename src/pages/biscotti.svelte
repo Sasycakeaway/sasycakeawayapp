@@ -10,7 +10,7 @@
     <List mediaList>
       <ListItem
         title="Paste di meliga"
-        after="20€ al KG"
+        after="20€ al Kg"
         
       >
         <img slot="media" src="Paste di meliga.jpg" width="80" />
@@ -27,7 +27,7 @@
 
       <ListItem
         title="Baci di dama"
-        after="20€ al KG"
+        after="20€ al Kg"
         
       >
         <img slot="media" src="Baci di dama.jpg" width="80" />
@@ -42,7 +42,7 @@
 
       <ListItem
         title="Brut ma bon"
-        after="20€ al KG"
+        after="20€ al Kg"
         
       >
         <img slot="media" src="Brut ma bon.jpg" width="80" />
@@ -57,7 +57,7 @@
 
       <ListItem
       title="Meringhe"
-      after="20€ al KG"
+      after="20€ al Kg"
       
     >
       <img slot="media" src="Meringhe.jpg" width="80" />
@@ -72,7 +72,7 @@
 
     <ListItem
     title="Nocciolotti"
-    after="20€ al KG"
+    after="20€ al Kg"
    
   >
     <img slot="media" src="Nocciolotti.jpg" width="80" />
@@ -87,7 +87,7 @@
 
     <ListItem
     title="Cantucci"
-    after="20€ al KG"
+    after="20€ al Kg"
     
     >
     <img slot="media" src="can.jpg" width="80" />
@@ -101,7 +101,7 @@
     </ListItem>
     <ListItem
     title="Canestrelli"
-    after="20€ al KG"
+    after="20€ al Kg"
     
     >
     <img slot="media" src="strelli.jpg" width="80" />
@@ -115,7 +115,7 @@
     </ListItem>
     <ListItem
     title="Frollino timo e limone"
-    after="20€ al KG"
+    after="20€ al Kg"
     
     >
     <img slot="media" src="Frollini.jpg" width="80" />
@@ -129,7 +129,7 @@
     </ListItem>
     <ListItem
     title="Assabesi"
-    after="20€ al KG"
+    after="20€ al Kg"
    
     >
     <img slot="media" src="Assabesi.jpg" width="80" />
@@ -143,7 +143,7 @@
     </ListItem>
     <ListItem
     title="Krumiri"
-    after="20€ al KG"
+    after="20€ al Kg"
     
     >
     <img slot="media" src="Krumiri.jpg" width="80" />
@@ -157,7 +157,7 @@
     </ListItem>
     <ListItem
     title="Diamantini"
-    after="20€ al KG"
+    after="20€ al Kg"
     
     >
     <img slot="media" src="dia.JPG" width="80" />
@@ -171,7 +171,7 @@
     </ListItem>
     <ListItem
     title="Cookies"
-    after="20€ al KG"
+    after="20€ al Kg"
     
     >
     <img slot="media" src="Cookies.jpg" width="80" />

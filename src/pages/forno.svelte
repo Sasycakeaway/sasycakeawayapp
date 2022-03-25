@@ -57,7 +57,7 @@
 
       <ListItem
       title="Cakepop"
-      after="3.5&euro al KG"
+      after="3.5&euro al Kg"
       
     >
       <img slot="media" src="Torta su stecco.jpg" width="80" />

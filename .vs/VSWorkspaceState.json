@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\js",
+    "\\src\\pages"
   ],
+  "SelectedNode": "\\src\\components\\app.svelte",
   "PreviewInSolutionExplorer": false
 }

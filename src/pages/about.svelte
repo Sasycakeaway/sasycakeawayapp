@@ -12,7 +12,7 @@
         Quest'app usa Google Analitics per fini statistici.
         Le icone sono state fornite da Icons8 e Framework7
     </p>
-   <Button fill href="/ingredienti">Elenco degli ingredienti</Button>
+   
 </Block>
     </div>
     <List simpleList>

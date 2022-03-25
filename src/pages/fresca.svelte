@@ -27,7 +27,7 @@
   
        <ListItem
           title="Pastiera Napoletana"
-          after="23€ al KG"
+          after="23€ al Kg"
         >
           <img slot="media" src="Pastiera.jpg" width="80" />
                   <div class="stepper stepper-raised stepper-fill stepper-init selettore">
@@ -56,7 +56,7 @@
   
         <!--<ListItem
         title="Piccidde’t castelluccese"
-        after="20€ al KG"
+        after="20€ al Kg"
         
       >
         <img slot="media" src="Piccidde't.jpg" width="80" />
@@ -99,7 +99,7 @@
   </ListItem>
     <!-- <ListItem
       title="Bonet piemontese"
-      after="20€ al KG"
+      after="20€ al Kg"
       
       >
       <img slot="media" src="Bonet.jpg" width="80" />
@@ -113,7 +113,7 @@
       </ListItem>
       <ListItem
       title="Tiramisù"
-      after="20€ al KG"
+      after="20€ al Kg"
       
       >
       <img slot="media" src="Tiramisù.jpg" width="80" />
@@ -127,7 +127,7 @@
       </ListItem>-->
       <ListItem
       title="Strudel tradizionale di Mele "
-      after="23€ al KG"
+      after="23€ al Kg"
       >
       <img slot="media" src="Strudel di mele.jpg" width="80" />
               <div class="stepper stepper-raised stepper-fill stepper-init selettore">
