@@ -23,48 +23,23 @@
       for(var prodotti of Object.keys(carrello))
     {
       if(piru.id==prodotti){
-          switch (piru.id) {
-              case "Muf":
-                  totale = totale - 2.5;
-                  break;
-              case "Cap":
-                  totale = totale - 3;
-                  break;
-              case "Benvenuti al Nord":
+        if(piru.id=="Muffin" || piru.id == "Pasticciotti"){
+          totale = totale - 2.5;
+        }else if(piru.id == "Cupcake" || piru.id == "Zeppole" || piru.id == "Cannoli siciliani" || piru.id == "Brownies" ){
+          totale = totale - 3;
+        }else if(piru.id == "Benvenuti al Nord"){
           totale=totale-12
-          break;
-        case "Benvenuti al Sud":
+        }else if(piru.id == "Benvenuti al Sud" || piru.id == "La grande abbuffata" || piru.id == "Il vegetariano"){
           totale=totale-15
-          break;
-        case "La grande abbuffata":
-          totale=totale-15;
-          break;
-        case "Il vegetariano":
-          totale=totale-15
-          break;
-        case "Zeppole":
-          totale=totale-3
-          break;
-        case "Cannoli siciliani":
-        totale=totale-3
-          break;
-        case "Pasticciotti":
-        totale=totale-2.5
-        break;
-        case "Strudel di mele":
-        totale=totale-5.75
-        break;
-        case "Pastiera":
-        totale=totale-5.75
-        break;
-        case "Profiteroles":
+        }else if(piru.id == "Strudel di mele" || piru.id == "Pastiera"){
+          totale=totale-5.75
+        }else if(piru.id == "Profiteroles"){
           totale=totale-4
-          break;
-              default:
-                 totale = totale - 5;
-                    break;
-          }
-          
+        }else if(piru.id == "Torta su stecco"){
+          totale=totale-3.5
+        }else{
+          totale = totale - 5;
+        }
         document.getElementById("tot").innerText="Totale=" + totale + "€"
         carrello[prodotti]--
         if(carrello[prodotti]==0){
@@ -113,10 +88,10 @@
 
                       
   <!-- built styles file will be auto injected -->
-  <script type="module" crossorigin src="assets/index.9c85945d.js"></script>
-  <link rel="modulepreload" href="assets/vendor.77f00439.js">
+  <script type="module" crossorigin src="assets/index.891f8730.js"></script>
+  <link rel="modulepreload" href="assets/vendor.4e8e944a.js">
   <link rel="stylesheet" href="assets/vendor.368945df.css">
-  <link rel="stylesheet" href="assets/index.52511fe9.css">
+  <link rel="stylesheet" href="assets/index.42e9f6c0.css">
 </head>
 <body>
   <div id="app"></div>
