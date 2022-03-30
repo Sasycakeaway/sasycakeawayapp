@@ -1,0 +1,16 @@
+{
+  "name": "Sasy's Cake Away",
+  "description": "Applicazione per la prenotazione dei dolci di Sasy's cake away",
+  "icons": [
+      {
+        "src": "/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff1a",
+  "theme_color": "#ffffff1a"
+}

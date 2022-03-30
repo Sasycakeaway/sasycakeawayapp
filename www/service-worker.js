@@ -17,7 +17,7 @@
  *
  */
 
-const version = "1.3";
+const version = "1.5";
 const cacheName = `Sasy's Cake Away-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
