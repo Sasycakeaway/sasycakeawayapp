@@ -242,6 +242,6 @@ if (cont>0) {
 }else{
   snackem=true
 }
-
+console.log(totale)
 }
   </script>

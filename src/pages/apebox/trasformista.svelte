@@ -234,7 +234,9 @@ document.getElementById(prodotti[i]).checked=false
 }
 console.log(ingredienti)
 if(JSON.stringify(ingredienti)!="[]"){
+  console.log("OK")
 trasformista[k]=ingredienti
+console.log(trasformista)
 k++
 totale=totale+18
 snackbar=true

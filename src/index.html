@@ -19,54 +19,21 @@
 
   <script>
       
-      function pop(piru) {
-      for(var prodotti of Object.keys(carrello))
-    {
-      if(piru.id==prodotti){
-        if(piru.id=="Muffin" || piru.id == "Pasticciotti"){
-          totale = totale - 2.5;
-        }else if(piru.id == "Cupcake" || piru.id == "Zeppole" || piru.id == "Cannoli siciliani" || piru.id == "Brownies" ){
-          totale = totale - 3;
-        }else if(piru.id == "Benvenuti al Nord"){
-          totale=totale-12
-        }else if(piru.id == "Benvenuti al Sud" || piru.id == "La grande abbuffata" || piru.id == "Il vegetariano"){
-          totale=totale-15
-        }else if(piru.id == "Strudel di mele" || piru.id == "Pastiera"){
-          totale=totale-5.75
-        }else if(piru.id == "Profiteroles"){
-          totale=totale-4
-        }else if(piru.id == "Torta su stecco"){
-          totale=totale-3.5
-        }else{
-          totale = totale - 5;
-        }
-        document.getElementById("tot").innerText="Totale=" + totale + "€"
-        carrello[prodotti]--
-        if(carrello[prodotti]==0){
-          delete carrello[prodotti]
-        var li=document.getElementById("cart")
-        li.removeChild(document.getElementById(prodotti+"car"))
-        }else{
-          document.getElementById(piru.id+"qty").innerText="Quantità " + carrello[prodotti]
-        }
-        
-      }else{
-      }
-          }
-
-    for(var prodotti of Object.keys(trasformista))
-    {
-      if(piru.id==prodotti){
-        totale=totale-18
-        document.getElementById("tot").innerText="Totale=" + totale + "€"
-        trasformista[piru.id]=0
-          delete carrello[prodotti]
-            var li=document.getElementById("cart")
-            li.removeChild(document.getElementById(piru.id))
-      }else{
-      }
-    }
-  }
+  //     function pop(piru) {
+  //   for(var prodotti of Object.keys(trasformista))
+  //   {
+  //     if(piru.id==prodotti){
+  //       totale=totale-18
+  //       tot = totale
+  //       console.log(tot)
+  //       trasformista[piru.id]=0
+  //         delete carrello[prodotti]
+  //           var li=document.getElementById("cart")
+  //           li.removeChild(document.getElementById(piru.id))
+  //     }else{
+  //     }
+  //   }
+  // }
   </script>
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: content:">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
